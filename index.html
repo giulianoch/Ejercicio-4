@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
 </head>
 <body>
-
-        <h3 style="color:Gray">
-                <h3>Comandos basicos de "Pepito BOT":<br>
-                </h3>
-                </h3>
-                <h3 style="color:Gray">
+    <form class="Formulario">
+        <h1>Formulario</h1>
+        
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" placeholder="&#128100 Ingresa tu nombre" id="nombre">
+                
+        <label for="email">Email</label>
+        <input type="text" placeholder="&#128232 Ingresa tu email" id="email">
                     
-                  <li>"Hola"</li>
-                  <li> "Estoy triste"<br></li>
-                  <li> "¿Como estas?"<br></li>
-                  <li> "Adios"<br></li>
+        <label for="telefono">Telefono</label>
+        <input type="number" placeholder="&#128222 Ingresa tu telefono" id="telefono">
+                    
+        <label for="usuario">Edad</label>
+        <input type="text" placeholder="&#129323 Ingresa tu usuario" id="usuario">
 
-        <p id="chatLog">- - C H A T - -<br></p>
-        <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        <!-- Abre el Modal -->
+        <button type="submit" form="formulario" id="myBtn" onclick="mostrarDatosModal()">Ingresar</button>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+        <!-- Contenido del modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Datos ingresados</h2>
+            <P id="nombre"></P>
+            
+        </div>
+        
+    
+    </form>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
