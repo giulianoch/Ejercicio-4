@@ -8,7 +8,7 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form class="Formulario">
+    <form class="Formulario" onclick="mostrarDatosModal()">
         <h1>Formulario</h1>
         
         <label for="nombre">Ingrese su nombre:</label>
@@ -24,17 +24,22 @@
         <input type="text" placeholder="&#129323 Ingresa tu usuario" id="usuario">
 
         <!-- Abre el Modal -->
-        <button type="submit" form="formulario" id="myBtn" onclick="mostrarDatosModal()">Ingresar</button>
+        <button type="submit" id="boton" form="formulario" >Ingresar</button>
         <!-- Modal -->
-        <div id="myModal" class="modal">
+        <div id="Modal" class="modal">
         <!-- Contenido del modal -->
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Datos ingresados</h2>
-            <P id="nombre"></P>
-            
+            <P id="nombre1">Nombre: </P>
+            <p id="usuario1"></p>
+            <p id="email1"></p>
+            <p id="email1"></p>
+            <p id="telefono1"></p>
+        <button type="submit" id="confirmar">Confirmar datos</button>
+
         </div>
-        
+    
     
     </form>
 
